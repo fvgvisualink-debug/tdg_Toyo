@@ -26,7 +26,7 @@ test('All seven image paths exist and preserve Pages project subpath', () => {
 });
 test('Contact destinations and pending review link', () => {
   const { employee, agency } = selectEmployee(data, '');
-  assert.deepEqual(contactLinks(employee, agency), {phone:'tel:+525512345678',whatsapp:'https://wa.me/525587654321',email:'mailto:nombre@toyotasatelite.mx'});
+  assert.deepEqual(contactLinks(employee, agency), {phone:'tel:+525579030264',whatsapp:'https://wa.me/525579030264',email:'mailto:nombre@toyotasatelite.mx'});
   assert.equal(reviewUrl(agency.reviewsUrl), null);
   assert.equal(reviewUrl('https://example.com/review'), 'https://example.com/review');
   assert.throws(() => reviewUrl('javascript:alert(1)'));
